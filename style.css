@@ -1,0 +1,98 @@
+/*
+Theme Name: RadioHitwave
+Template: hueman
+*/
+
+/** header menu background **/
+.nav-wrap.container,
+#nav-header .nav ul,
+#header #nav-mobile {
+	background-color: black !important;
+}
+
+
+/** custom sidebar below header, before content **/
+.hitwave-header-sidebar {
+	text-align: center;
+}
+
+
+/** custom sidebar at the top of the page, before header **/
+.hitwave-topbar-sidebar {
+	background-color: black;
+	text-align: center;
+	color: #ccc;
+}
+.hitwave-topbar-sidebar .social-links {
+	float:none;
+}
+.hitwave-topbar-sidebar .social-links .social-tooltip:hover {
+	color: white !important;
+}
+
+
+/** fixed submit button styling in Ninja forms THREE **/
+.themeform input[type=submit],
+.themeform input[type=button],
+.themeform button[type=submit] {
+	background: #3b8dbd;
+	color: #fff;
+	padding: 8px 14px;
+	font-weight: 600;
+	display: inline-block;
+	border: 0;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/** post image styling **/
+.entry-inner .post-image {
+	float: left;
+	margin-right: 10px;
+} 
+.entry-inner .post-image figcaption {
+	font-style: italic;
+	text-align: center;
+	margin-top: -10px;
+	font-size: 0.8em;
+}
+@media (max-width: 600px) {
+	.entry-inner .post-image {
+		float: none;
+		text-align: center;
+	}
+}
+
+
+/** custom page header image **/
+header#header {
+	background-image: url('images/header-studio-vollansicht.png');
+	background-size: cover;
+	background-position: center bottom;
+}
+
+
+/** generic class for hiding content on mobile **/
+@media (max-width: 720px) {
+	.desktop-only {
+		display: none;
+	}
+}
+
+
+/** fixed text colors, easier readability **/
+.entry,
+.entry.excerpt,
+.entry .entry-inner,
+.responsive-tabs li.responsive-tabs__list__item--active,
+.responsive-tabs li.responsive-tabs__list__item--active:hover {
+	color: black;
+}
+
+
+/** remove min-height for content, looks bad on mobile **/
+.main-inner {
+	min-height: initial;
+}
