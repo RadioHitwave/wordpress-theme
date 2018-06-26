@@ -65,11 +65,14 @@ body {
 .entry-inner .post-image {
 	float: left;
 	margin-right: 10px;
+	display: table;
 } 
 .entry-inner .post-image figcaption {
 	font-style: italic;
 	text-align: center;
-	margin-top: -10px;
+	display: table-caption;
+	caption-side: bottom;
+	line-height: initial;
 	font-size: 0.8em;
 }
 @media (max-width: 600px) {
