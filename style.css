@@ -3,6 +3,19 @@ Theme Name: RadioHitwave
 Template: hueman
 */
 
+/** use standard web-safe font for supporting all umlauts **/
+body {
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	font-style: light;
+}
+.single .post-title {
+	font-size: 2em;
+}
+.main .content {
+	font-size: 0.9em;
+}
+
+
 /** header menu background **/
 .nav-wrap.container,
 #nav-header .nav ul,
