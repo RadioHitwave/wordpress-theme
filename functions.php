@@ -46,7 +46,7 @@ add_shortcode('hitwave_social_links', 'hu_print_social_links');
 
 
 function hitwave_add_post_image_to_content($content){
-	if (isset($_GET['amp_markup'])) return $content;
+	if (isset($_GET['amp_markup']) || substr($_SERVER['REQUEST_URI'],-5)=="/amp/") return $content;
 	ob_start(); ?>
 		<figure class="post-image">
 			<?php if (has_post_thumbnail()) the_post_thumbnail( 'medium' ); ?>
