@@ -113,3 +113,18 @@ header#header {
 .main-inner {
 	min-height: initial;
 }
+
+
+div[id^="liveblog-entry-"] {
+	border: 1px solid #f1f1f1;
+	padding: 5px;
+	box-shadow: 0 0 2px grey;
+	margin: 10px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	background: #f1f1f1;
+}
+
+div[id^="liveblog-entry-"]:last-of-type {
+	margin-bottom: 0px;
+}
