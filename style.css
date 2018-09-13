@@ -128,3 +128,10 @@ div[id^="liveblog-entry-"] {
 div[id^="liveblog-entry-"]:last-of-type {
 	margin-bottom: 0px;
 }
+
+
+div.wp-audio-shortcode {
+	display: inline-block;
+	width: 350px !important;
+	max-width: 100% !important;
+}
