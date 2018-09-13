@@ -65,9 +65,10 @@ function hitwave_remove_post_image_description_from_excerpt($content){
 			$content
 		);
 	}
-	return $content;
+	return trim($content);
 }
 add_filter('the_excerpt', 'hitwave_remove_post_image_description_from_excerpt');
+add_filter('instant_articles_excerpt', 'hitwave_remove_post_image_description_from_excerpt');
 
 
 function hitwave_include_shortcode($attributes){
