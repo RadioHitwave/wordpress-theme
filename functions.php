@@ -46,7 +46,6 @@ add_shortcode('hitwave_social_links', 'hu_print_social_links');
 
 
 function hitwave_add_post_image_to_content($content){
-	if (isset($_GET['amp_markup']) || isset($_GET['amp']) || isset($_GET['ia_markup']) || substr($_SERVER['REQUEST_URI'],-5)=="/amp/") return $content;
 	ob_start(); ?>
 		<figure class="post-image">
 			<?php if (has_post_thumbnail()) the_post_thumbnail( 'medium' ); ?>
@@ -55,6 +54,15 @@ function hitwave_add_post_image_to_content($content){
 	<?php return ob_get_clean() . $content;
 }
 add_filter('the_content', 'hitwave_add_post_image_to_content');
+
+
+function hitwave_instant_articles_remove_featured_image($image_data) {
+	return array(
+		'src' => '',
+		'caption' => '',
+	);
+}
+add_filter('instant_articles_featured_image', 'hitwave_instant_articles_remove_featured_image');
 
 
 function hitwave_remove_post_image_description_from_excerpt($content){
