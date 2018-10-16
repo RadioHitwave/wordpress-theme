@@ -46,10 +46,13 @@ add_shortcode('hitwave_social_links', 'hu_print_social_links');
 
 
 function hitwave_add_post_image_to_content($content){
+	if (!has_post_thumbnail()) return $content;
 	ob_start(); ?>
 		<figure class="post-image">
-			<?php if (has_post_thumbnail()) the_post_thumbnail( 'medium' ); ?>
-			<figcaption><?=get_post(get_post_thumbnail_id())->post_excerpt; ?></figcaption>
+			<?php the_post_thumbnail('medium'); ?>
+			<figcaption>
+				<?=get_post(get_post_thumbnail_id())->post_excerpt; ?>
+			</figcaption>
 		</figure>
 	<?php return ob_get_clean() . $content;
 }
