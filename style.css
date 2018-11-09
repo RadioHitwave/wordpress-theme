@@ -135,3 +135,14 @@ div.wp-audio-shortcode {
 	width: 350px !important;
 	max-width: 100% !important;
 }
+
+
+/** adjust padding of header widgets **/
+#header .pad {
+	padding: 0;
+	padding-left: 30px;
+}
+.hitwave-topbar-sidebar .textwidget,
+.hitwave-topbar-sidebar .social-links {
+	margin:2px;
+}
