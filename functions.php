@@ -90,7 +90,7 @@ function hitwave_include_shortcode($attributes){
   
   if ($app != ''){
     ob_start();
-    include_once('/var/www/app.radiohitwave.com/'.$app.'/index.php');
+    include_once('/var/www/app/'.$app.'/index.php');
     return ob_get_clean();
   } 
   else if ($url != ''){
