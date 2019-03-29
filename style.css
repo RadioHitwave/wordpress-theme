@@ -18,7 +18,7 @@ body {
 
 /** fixed issue with team app overlay being blocked by the menu **/
 .nav-container {
-	z-index: 1 !important;
+	z-index: 90 !important;
 }
 
 
