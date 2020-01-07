@@ -1,5 +1,10 @@
 <?php
 
+function hitwave_inject_analytics() { ?>
+<?php }
+add_action('wp_footer', 'hitwave_inject_analytics', 99999);
+
+
 function hitwave_header_sidebar_print(){
 	if (is_home() && is_active_sidebar('hitwave-header-sidebar')) { ?>
 		<div class="hitwave-header-sidebar">
