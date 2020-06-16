@@ -152,5 +152,6 @@ div.wp-audio-shortcode {
 .hitwave-topbar-sidebar .social-links {
 	margin:2px;
 }
+
 /** hide header show image on small screens, it's interfering with the hitwave logo **/
 @media (max-width: 1000px){.header-show-image {display:none !important;}}
