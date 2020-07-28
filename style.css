@@ -51,6 +51,13 @@ body {
 }
 
 
+/** move stock header widgets a bit down, used for mod picture **/
+.header-ads-desktop #header-widgets {
+	margin-bottom: -30px;
+	margin-right: -30px;
+}
+
+
 /** fixed submit button styling in Ninja forms THREE **/
 .themeform input[type=submit],
 .themeform input[type=button],
